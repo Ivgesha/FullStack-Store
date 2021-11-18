@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Ubuntu:ital,wght@1,300&display=swap");
+
+.App {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: #f3f4f7;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.lushaImg {
+  border-radius: 50%;
+}
+.menuBar {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: stretch; */
+  /* margin: 4%; */
+  /* font-size: 150%; */
+  /* padding: 2%; */
+
+  /* border-bottom: 2px solid black;  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  background-color: #0655ff;
+  /* background-color: #037c8f; */
+}
+.menuBar-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  color: white;
+  transition: 0.2s;
+}
+.menuBar-div:hover {
+  border-radius: 4px;
+  background-color: #f80066;
+}
+.menuBar-div-label {
+  font-size: 20px;
+}
+
+.productList {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  margin: 4%;
+  /* border: 1px solid black; */
+  border-radius: 4px;
+  width: 120%;
+}
+.singleProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  margin: 2%;
+  padding: 2%;
+  border-radius: 8px;
+  background-color: #17a2b8;
+  width: 100%;
+}
+.SingleProductComp-leftSide {
+  padding: 2%;
+}
+.SingleProductComp-leftSide-titles {
+  color: white;
+  border-radius: 4px;
+  width: 200px;
+  cursor: pointer;
+  padding: 4%;
+  transition: 0.2s;
+}
+.SingleProductComp-leftSide-titles:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.SingleProductComp-rightSide {
+  /* border: 1px solid black; */
+  /* width: 180px; */
+  border-radius: 4px;
+  padding: 2%;
+}
+.customerBoughtList {
+  /* border: 1px solid black; */
+  padding: 2%;
+}
+
+.singleCostumerBougthComp {
+  /* border: 1px solid black; */
+  /* margin: 3%; */
+  margin-bottom: 3%;
+
+  border-radius: 4px;
+  padding: 3%;
+  width: 180px;
+  background-color: #f3f4f7;
+  color: black;
+}
+
+/* .singleCostumerBougthComp-buttons {
+}
+.singleCostumerBougthComp-buttons-btn {
+}
+.productPage {
+} */
+.productPage-mainData {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.addProductToCustomer-visible {
+  /* background-color: red; */
+  position: fixed;
+  left: 50%;
+  width: 50%;
+  display: block;
+}
+.AddProductToCustomer-select select {
+  font-size: 120%;
+  padding: 2%;
+  margin: 2%;
+}
+
+.addProductToCustomer-invisible {
+  display: none;
+}
+
+.editProductPage,
+.editCustomerPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.SingleProductBougthByCustomer {
+  border: 1px solid black;
+  margin: 1%;
+  padding: 4%;
+}
+
+.purchasesComp {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  padding: 3%;
+}
+.purchasesComp-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.purchasesComp-table table {
+  border-collapse: collapse;
+  border-style: solid;
+  font-size: 150%;
+}
+.purchasesComp-table table td,
+.purchasesComp-table table th {
+  padding: 1%;
+  border: 2px solid black;
+}
+
+.customersComp-table table td,
+.customersComp-table table th {
+  padding: 1%;
+  border: 2px solid #f3f4f7;
+
+  border-radius: 40px;
+}
+
+.purchasesComp-buttons-select,
+.purchasesComp-buttons-date {
+  padding: 1%;
+  margin: 1%;
+  font-size: 110%;
+  border-radius: 4px;
+}
+.purchasesComp-buttons-search {
+  background-color: white;
+  color: black;
+  border: 2px solid #17a2b8;
+  font-size: 150%;
+  padding: 0.8%;
+  border-radius: 4px;
+  margin-left: 1%;
+}
+.purchasesComp-buttons-search:hover {
+  background-color: #17a2b8;
+  transition: 0.2s;
+  color: white;
+}
+
+.customersComp {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+  justify-content: space-around;
+}
+.customersComp-purchaseProduct {
+}
+.customersComp-table table {
+  border-collapse: collapse;
+  border-radius: 40px;
+  font-size: 150%;
+  width: 200%;
+  color: white;
+  background-color: #17a2b8;
+}
+.customersComp-table-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #17a2b8;
+  font-size: 80%;
+  padding: 4%;
+  border-radius: 8px;
+  margin-top: 2%;
+  transition: 0.3s;
+}
+.customersComp-table-btn:hover {
+  background-color: #ff013c;
+  color: white;
+}
+
+.PurchaseProduct {
+  padding: 20%;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ff013c;
+  border-radius: 8px;
+  color: white;
+}
+
+.PurchaseProduct-select {
+  padding: 1%;
+  margin: 1%;
+  font-size: 110%;
+  border-radius: 4px;
+}
+.PurchaseProduct-button {
+  background-color: white;
+  color: black;
+  font-size: 110%;
+  border: transparent;
+  padding: 4%;
+  border-radius: 4px;
+  transition: 0.4s;
+  margin-top: 4%;
+}
+
+.PurchaseProduct-button:hover {
+  background-color: #ffde06;
+}
+.AddProductToCustomer {
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  box-shadow: 6px 0px 0px #00e6f6;
+  color: white;
+  border-radius: 8px;
+  padding: 2%;
+  width: 400px;
+  height: 200px;
+}
+
+/* CSS */ /* The cool gliched add button*/
+.singleCostumerBougthComp-buttons-btn,
+.singleCostumerBougthComp-buttons-btn:after {
+  /* padding: 5%; */
+  width: 80px;
+  height: 30px;
+  /* line-height: 78px; */
+  font-size: 15px;
+  /* font-family: "Bebas Neue", sans-serif; */
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 2px;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.singleCostumerBougthComp-buttons-btn:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "ALTERNATE TEXT";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+.singleCostumerBougthComp-buttons-btn:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+/* second cool button  */
+
+/* CSS */
+.AddProductToCustomer-btn {
+  font-size: 16px;
+
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  margin-left: 2%;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: #ffe54c;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.AddProductToCustomer-btn:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.singleCostumerBougthComp-titles {
+  cursor: pointer;
+}
+
+.editProductPage-customerList-container {
+  background-color: #17a2b8;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.editCustomerPage-productList {
+  width: 20%;
+}
+
+.editCustomerPage-update-delete,
+.editProductPage-update-delete {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  width: 30%;
+}
+.editCustomerPage-update-delete-container,
+.editProductPage-update-delete-container {
+  font-size: 150%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  padding: 5%;
+  background-color: #17a2b8;
+  border-radius: 4px;
+  color: white;
+}
+.editCustomerPage-update-delete button,
+.editProductPage-update-delete button {
+  margin: 2%;
+  background-color: white;
+  color: black;
+  border: transparent;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.editCustomerPage-update-delete button:hover,
+.editProductPage-update-delete button:hover {
+  color: white;
+  background-color: #4caf50;
+}
